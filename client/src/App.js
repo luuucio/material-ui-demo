@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from "react";
+import Form from "./components/Form";
+import { CssBaseline, AppBar, Grid, Typography } from "@material-ui/core/";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <CssBaseline />
+      <AppBar position='static'>
+        <Typography variant='h2' align='center' style={{ marginTop: "15px" }}>
+          Material-UI Demo
+        </Typography>
+        <Typography variant='h4' align='center' style={{ margin: "15px" }}>
+          using React, Redux and JSON-Server
+        </Typography>
+      </AppBar>
+      <Grid container>
+        <Grid item md={6} sm={12}>
+          <Form />
+        </Grid>
+        <Grid item md={6} sm={12}>
+          Hello
+        </Grid>
+      </Grid>
+    </Fragment>
   );
-}
+};
 
 export default App;

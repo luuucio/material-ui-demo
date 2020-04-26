@@ -1,19 +1,22 @@
 {
-  "posts": [
+  "todo": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "title": "Call John",
+      "description": "At dinner time",
+      "completed": false
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "title": "Backup the laptop",
+      "description": "Use the new hard drive",
+      "completed": true
+    },
+    {
+      "id": 3,
+      "title": "Upgrade the OS",
+      "description": "Remember to backup the laptop",
+      "completed": false
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
