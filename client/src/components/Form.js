@@ -47,7 +47,9 @@ const Form = () => {
           </Button>
         </div>
         <div align='center' style={{ margin: "30px" }}>
-          <Button variant='contained'>Clear</Button>
+          <Button variant='contained' color='secondary'>
+            Clear
+          </Button>
         </div>
       </form>
     </Container>

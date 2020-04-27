@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import Form from "./components/Form";
+import TodoList from "./components/TodoList";
 import { CssBaseline, AppBar, Grid, Typography } from "@material-ui/core/";
 
 const App = () => {
@@ -19,7 +20,7 @@ const App = () => {
           <Form />
         </Grid>
         <Grid item md={6} sm={12}>
-          Hello
+          <TodoList />
         </Grid>
       </Grid>
     </Fragment>
