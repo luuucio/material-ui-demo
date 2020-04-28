@@ -24,5 +24,7 @@ export default (state = initialState, action) => {
         todos: [...state.todos, action.payload],
         loading: false,
       };
+    default:
+      return state;
   }
 };
