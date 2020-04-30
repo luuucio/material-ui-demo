@@ -5,7 +5,7 @@ export const setLoading = () => {
 };
 
 export const addTodo = todo => async dispatch => {
-  setLoading();
+  dispatch(setLoading());
 
   const res = await fetch("/todo", {
     method: "POST",
@@ -17,7 +17,7 @@ export const addTodo = todo => async dispatch => {
 };
 
 export const getTodos = () => async dispatch => {
-  setLoading();
+  dispatch(setLoading());
 
   const res = await fetch("/todo");
   const data = await res.json();
