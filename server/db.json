@@ -17,6 +17,12 @@
       "title": "Upgrade the OS",
       "description": "Remember to backup the laptop",
       "completed": false
+    },
+    {
+      "title": "Meeting with Paul",
+      "description": "Send documents first",
+      "completed": true,
+      "id": 4
     }
   ]
 }

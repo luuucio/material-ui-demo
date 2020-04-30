@@ -10,6 +10,7 @@ export const addTodo = todo => async dispatch => {
   const res = await fetch("/todo", {
     method: "POST",
     headers: { "Content-type": "application/json" },
+    body: JSON.stringify(todo),
   });
   const data = await res.json();
 

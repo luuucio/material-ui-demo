@@ -7,6 +7,8 @@ import {
   FormControlLabel,
   Switch,
 } from "@material-ui/core";
+import { useDispatch } from "react-redux";
+import { addTodo } from "../actions/todoActions";
 
 const Form = () => {
   const [state, setState] = useState({
@@ -14,6 +16,8 @@ const Form = () => {
     description: null,
     completed: false,
   });
+
+  const dispatch = useDispatch();
 
   const setCompleted = () => {
     setState({ ...state, completed: !state.completed });
@@ -25,7 +29,7 @@ const Form = () => {
 
   const onSubmit = e => {
     e.preventDefault();
-    console.log(state);
+    dispatch(addTodo(state));
   };
 
   return (
