@@ -28,7 +28,7 @@ const TodoList = () => {
         }}
       >
         <Grid>
-          <BounceLoader size='150' color='#00838f' />
+          <BounceLoader size='150px' color='#00838f' />
         </Grid>
       </Grid>
     );
